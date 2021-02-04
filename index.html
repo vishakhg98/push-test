@@ -1,12 +1,14 @@
 <html>
-<head>
+<head> 
+   <!---------------- Add Two Scripts to get started -------------------->
+   <script src="https://littrapush.s3.ap-south-1.amazonaws.com/sdk/client.js?apiKey=7594d295-f026-4399-9eb6-3bec45604de1" id="littraPush" type="text/javascript"></script>
+   <script>
+   window.LITTRA.registerServiceWorker();
+   </script>
+   <!-------------------------------------------------------------------->
    
-    
-    <!-- Push Notifications -->
-    <script src="https://littrapush.s3.ap-south-1.amazonaws.com/sdk/client.js?apiKey=7594d295-f026-4399-9eb6-3bec45604de1" id="littraPush" type="text/javascript"></script>
-    <script>
-      window.LITTRA.registerServiceWorker();
-    </script>
+   <link rel="icon" type="image/png" href="img/dummy.png" />
+   <title>Dummy Site</title>
    <style>
       body {
          display: flex;
@@ -15,10 +17,21 @@
          flex-direction: column;
          height: 100vh;
       }
+
+      h1 {
+         font-size: 50px;
+      }
+      h3 {
+         font-size: 35px;
+      }
+      p {
+         font-size: 20px;
+      }
    </style>
-    </head>
-    <body>
-    <h1>Welcome to dummy Website</h1>
-       <h3>Here we sell dummy products</h3>
-    </body>
+</head>
+<body>
+   <h1>Welcome to Dummy Website</h1>
+   <h3>Here we sell dummy products</h3>
+   <p>"We utilize push notifications features to send information about our discounted sales to the registered users."</p>
+</body>
 <html>
